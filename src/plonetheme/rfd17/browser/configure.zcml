@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.rfd17">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="plonetheme.rfd17.interfaces.IPlonethemeRfd17Layer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="plonetheme.rfd17"
+      type="plone"
+      directory="static"
+      />
+
+</configure>
