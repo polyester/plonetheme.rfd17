@@ -1,21 +1,98 @@
 /* our custom styles */
 
-// DELETE ME:
-.custom-theme-marker {
-    display: none;
-    position: absolute;
-    top: 300px;
-    left: 30%;
-    margin: auto 0;
-    transform: rotate(-20deg);
-    background: #00ECFF;
-    color: #fff;
-    padding: 1em;
-    z-index: 100;
+
+.documentFirstHeading{
+    border-bottom: none;
 }
-.section-front-page .custom-theme-marker{
+.event.summary {
+    max-width: 400px;
+    width: 400px;
+    list-style: none;
+    background-color: #E9DBF4;
+}
+.event.summary strong, .event.summary li > span {
+    display: inline;
+}
+.event.summary li.event-category > span {
     display: block;
 }
+#portal-footer img {
+    padding-right: 10em;
+    padding-bottom: 2em;
+}
+.rfd-headertext{
+position: absolute;
+margin-top: -7em;
+margin-left: 24em;
+}
+.rfd-socialmedia{
+    position: absolute;
+    margin-top: -7em;
+    margin-left: 38em;
+}
+.rfd-socialmedia img{padding-bottom:0.5em}
+#isotope-filters {
+    clear: both;
+    width: 100%;
+}
+div.isotope-image{
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+
+}
+div.isotope-image > img {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+#isotope-filters .button-container h5 {
+    display: inline-block;
+    padding: 0 1em;
+}
+#isotope-filters .plone-button-group {
+    clear: both;
+}
+#isotope-grid {
+    position: relative;
+}
+#isotope-grid h2{font-size: 18px;}
+#isotope-grid .vertical {
+    padding: 0 1em;
+    width: 100%;
+}
+#isotope-grid .vertical:hover {
+    background-color: #eee;
+}
+#isotope-grid .horizontal {
+    background-color: #F8F1FF;
+    border: none;
+    color: #17194B;
+    margin: 1%;
+    padding: 1em;
+    text-align: center;
+    width: 47%;
+}
+#isotope-grid .horizontal:hover {
+    background-color: #E9DBF4;
+}
+@media (min-width: 768px) {
+#isotope-grid .horizontal {
+    width: 30%;
+}
+}
+@media (min-width: 1200px) {
+#isotope-grid .horizontal {
+    width: 30%;
+}
+}
+@media (max-width: 670px){
+    .rfd-headertext, .rfd-socialmedia {
+    display: none;
+    }
+}
+
 
 
 /* TinyMCE templates */
