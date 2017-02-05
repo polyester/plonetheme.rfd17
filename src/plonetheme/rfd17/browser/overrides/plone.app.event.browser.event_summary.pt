@@ -20,19 +20,19 @@
 
 <li>
      <strong class="pat-moment"
-   data-pat-moment="format:HH:mm, dddd DD MMMM YYYY">
+   data-pat-moment="format:HH:mm, dd DD MM YYYY">
     ${python: data.start}
 </strong>
 </li>
    <tal:cond condition="context/type_voorstelling">
       <li class="event-location">
-        <strong>Wat</strong>
+        <strong>What</strong>
         <span itemprop="location" tal:content="structure python: context.type_voorstelling">Type Voorstelling</span>
       </li>
     </tal:cond>
    <tal:cond condition="context/route">
       <li class="event-location">
-        <strong>Onderdeel van:</strong>
+        <strong>Part of:</strong>
         <span itemprop="location" tal:content="structure python: context.route">Route</span>
       </li>
     </tal:cond>
@@ -112,7 +112,7 @@
     <tal:cond condition="python:'subjects' not in excludes">
     <tal:cond condition="data/subjects">
       <li class="event-category">
-        <strong>Thema's</strong>
+        <strong>Theme(s)</strong>
         <span itemprop="eventType" tal:repeat="item data/subjects" tal:content="item" />
       </li>
     </tal:cond>
@@ -120,7 +120,7 @@
 
     <tal:cond condition="python:'ical' not in excludes">
       <li class="event-calendar">
-        <strong>Zet in agenda</strong>
+        <strong>Agenda</strong>
         <tal:span tal:define="here_url context/@@plone_context_state/object_url;
                         portal_url context/@@plone_portal_state/portal_url;">
           <a href="#"
