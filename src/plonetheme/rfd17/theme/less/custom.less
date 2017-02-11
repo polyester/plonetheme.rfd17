@@ -1,6 +1,16 @@
 /* our custom styles */
 
-
+p.callout {
+    background: none;
+    padding-left: 1em;
+    padding-right: 0;
+    border-left: 1em solid #ccc;
+    clear: both;
+}
+p.callout img.image-right {
+    max-width: 50%;
+    margin: 0;
+}
 .plone-navbar {
   .clearfix();
   background-color: @plone-gray-lighter;
@@ -125,11 +135,14 @@
     border-bottom: none;
 }
 .event.summary {
-    max-width: 400px;
+    max-width: 50%;
     width: 400px;
     list-style: none;
     background-color: #E9DBF4;
     margin-bottom: 20em;
+}
+html [class*="shorts"] .event.summary {
+    margin-bottom: 0em;
 }
 .event.summary strong, .event.summary li > span {
     display: inline;
