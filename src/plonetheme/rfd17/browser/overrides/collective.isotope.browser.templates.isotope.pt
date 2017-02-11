@@ -118,7 +118,7 @@ $(window).load(function(evt) {
                     </a>
                   </tal:no-image>
                  <p class="pat-moment"
-   data-pat-moment="format:dd DD MMMM YYYY HH:mm">
+   data-pat-moment="format:ddd DD MMM YYYY HH:mm">
     ${python: item_start}
 </p>                 <p class="discreet" tal:content="item/Description">[description]</p>
                 </article>

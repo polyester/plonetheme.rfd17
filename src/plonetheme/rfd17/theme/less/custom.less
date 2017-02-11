@@ -134,8 +134,11 @@
 .event.summary strong, .event.summary li > span {
     display: inline;
 }
-.event.summary li.event-category > span {
-    display: block;
+.event.summary li.event-category span[itemprop~="eventType"] {
+    padding-right: 1em;
+}
+.event.summary [class^="icon"] {
+    font-size: 30px;
 }
 #portal-header {
     margin-bottom: 35px;
