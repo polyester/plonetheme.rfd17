@@ -24,4 +24,15 @@
 	      <element>template|+plone+static/components/tinymce-builded/js/tinymce/plugins/template</element>
 	    </value>
 	</record>
+	  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.route">
+    <value key="title">route</value>
+    <value key="description">route</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+        <element>plone.app.querystring.operation.string.contains</element>
+    </value>
+    <value key="group">Metadata</value>
+  </records>
 </registry>
