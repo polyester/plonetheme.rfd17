@@ -1,5 +1,34 @@
 /* our custom styles */
 
+form#searchGadget_form.pat-livesearch{
+    max-width: 200px;
+    min-width: 200px;
+}
+@media (min-width: 768px){
+#portal-header #portal-searchbox {
+    width: 50%;
+}
+  #portal-header #portal-searchbox {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    margin-left: 1em;
+    padding-top: 0;
+    clear: none;
+    float: right;
+    max-width: 50%;
+    width: 200px;
+    white-space: nowrap;
+  }
+  #portal-header #portal-searchbox .searchSection {
+    display: none;
+  }
+    #portal-header #portal-searchbox [type="submit"] {
+    display: none;
+  }
+}
+
+
 .pagination ul {
     list-style-type: none;
     margin-bottom: 2em;
@@ -190,12 +219,12 @@ html [class*="shorts"] .event.summary {
 .rfd-headertext{
 position: absolute;
 margin-top: -8em;
-margin-left: 24em;
+margin-left: 27em;
 }
 .rfd-socialmedia{
     position: absolute;
     margin-top: -8em;
-    margin-left: 38em;
+    margin-left: 23em;
 }
 .rfd-socialmedia img{padding-bottom:0.5em}
 #isotope-filters {
@@ -263,7 +292,24 @@ div.isotope-image > img {
     }
 }
 
-
+@media (max-width: 768px){
+    .rfd-headertext {
+    display: none;
+    }
+    .documentFirstHeading{
+    clear: both;
+    }
+    #portal-header #portal-searchbox {
+  padding-top: 20px;
+  clear: left;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  margin-left: 3px;
+  margin-top: 7em;
+  white-space: nowrap;
+}
+}
 
 /* TinyMCE templates */
 
