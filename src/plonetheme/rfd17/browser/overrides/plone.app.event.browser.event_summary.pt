@@ -7,7 +7,10 @@
       tal:omit-tag="">
 <body tal:omit-tag="">
 
-<tal:def tal:define="data python:view.data; excludes view/excludes">
+<tal:def tal:define="data python:view.data;
+                     excludes view/excludes;
+                     toLocalizedTime nocall:context/@@plone/toLocalizedTime
+                     ">
 
   <ul class="event summary details" summary="Event details" i18n:attributes="summary summary_event_details">
 
@@ -20,9 +23,8 @@
 
 <li>
 <strong><span class="icon-history"></span></strong>
-     <strong class="pat-moment"
-   data-pat-moment="format:HH:mm, ddd DD MMM YYYY">
-    ${python: data.start}
+     <strong> <span tal:replace="python:here.toLocalizedTime(data.start, True)"> </span>
+
 </strong>
 </li>
    <tal:cond condition="context/type_voorstelling">
